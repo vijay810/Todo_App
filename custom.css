@@ -3,13 +3,16 @@
 body {
   /* background: url("../assets/blob-haikei.svg") no-repeat; */
   font-family: "Montserrat", sans-serif;
-
+  background-image: url(./assets/1.jpg);
+  background-repeat: no-repeat;
+  
 }
 .form-control{
   font-size: 2rem;
   width: 70%;
   padding-left: 1rem;
-  position: center;
+
+
 }
 img {
   cursor: pointer;
@@ -19,12 +22,15 @@ img {
   font-size: 1.3rem;
   padding-left: 1rem;
   text-align: center;
+  justify-content: center;
+  display: flex;
 }
 
 [contenteditable="true"]:active,
 [contenteditable="true"]:focus {
   border-bottom: 2px solid rgb(214, 214, 214);
   outline: none;
+  
 }
 
 h1.todo-title {
@@ -54,6 +60,7 @@ h1.todo-title {
   overflow-y: scroll;
   max-height: 500px;
   font-size: 2rem;
+  
 }
 
 .list-group li {
@@ -64,4 +71,19 @@ h1.todo-title {
 .list-item--icons img:not(:last-of-type) {
   margin-right: 1.5rem;
   position: relative;
+}
+section.container{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.todo-input--container{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.container-fluid{
+  background-color: antiquewhite;
 }
